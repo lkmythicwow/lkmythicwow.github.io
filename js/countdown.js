@@ -1,4 +1,4 @@
-var countDownDate = new Date("Mar 16, 2020 00:00:00").getTime();
+var countDownDate = new Date("June 21, 2020 17:00:00").getTime();
 
 var x = setInterval(function() {
 
@@ -19,6 +19,6 @@ var x = setInterval(function() {
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EM BREVE!";
+    document.getElementById("countdown").innerHTML = "LANÇAMENTO!";
   }
 }, 1000);
