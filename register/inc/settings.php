@@ -14,8 +14,8 @@ define('EXPANSION', 2); // 1 = Vanilla / 2 = TBC / 3 = WOTLK
 define('REALMLIST', 'set realmlist mythicowow.xyz / ABERTURA DOMINGO ÁS 17 HORAS!');
 
 // Google ReCaptcha Settings
-define('6Ld6J6UZAAAAAKBKEgh9aILfwXF8_PENNlwptnXC', '');
-define('6Ld6J6UZAAAAAL1bQC2Als7Edn0eaknsk36wkQuh', '');
+define('6LcsMKUZAAAAAGBmNF-fz0qD6d7-ku7-ZlzUYxuL', '');
+define('6LcsMKUZAAAAAJ4Xld3mSwyXjLEyZj2vAoiQzu_1', '');
 
 // Message Settings
 define('SUCCESS_MESSAGE', 'Conta criada com sucesso!');
