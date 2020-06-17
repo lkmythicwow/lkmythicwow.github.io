@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2:700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp&display=swap');
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:url("fundo.jpg");
+  overflow: hidden;
+}
+
+#top-bg:hover{
+  cursor: pointer;
+}
+
+#bandeiras {
+  position: fixed;
+  top: 130px;
+}
+
+#bandeiras .bandeira{
+  display: inline-block;
+  background: pink;
+  width: 24px;
+  height: 17px;
+}
+
+#bandeiras .bandeira a:active{
+  cursor:progress;
+}
+.bandeira img{
+  transition: 500ms;
+  
+}
+
+.bandeira img:hover{
+  outline: 2px solid rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+@keyframes destaque {
+  from {
+    color: blue;
+  }
+  to {
+    color: red;
+    font-size: 2.5em;
+  }
+}
+
+#countdown {
+  color: red;
+  text-transform: uppercase;
+  animation-name: destaque;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  font-family: 'Baloo Chettan 2', cursive;
+}
+
+footer{
+  position: fixed;
+  bottom: 20px;
+}
+
+#rede-social img{
+  width: 25px;
+  height: 25px;
+  padding-left: 12.5px;
+  padding-top: 12.5px;
+}
+
+#redes-sociais{
+}
+
+#rede-social{
+  height: 50px;
+  width: 50px;
+  margin: 0px 5px 0px 10px;
+  padding: 0px;
+  border: 1px dashed rgb(25, 0, 255);
+  display: inline-block;
+  transition: 500ms ;
+  border-radius: 50px;
+}
+
+
+#rede-social:hover{
+  transform: rotateY(360deg);
+  border: 2px solid red;
+}
+#rede-social span{
+  display: none;
+}
+
+header{
+  position: fixed;
+  top: 30px;
+  line-height: 5px;
+  color: greenyellow;
+  transition: 0.5s;
+  ;
+  /*text-shadow: 3px 3px 15px rgba(0,0,0,0.6);*/
+  text-shadow: 4px 4px black;
+  font-family: 'sans-serif', Trebuchet MS;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+header span{
+  color: yellow;
+  margin-left: 5px;
+}
+
+header h2{
+  text-align: center;
+}
+
+header:hover{
+  transform: scale(1.15);
+  text-shadow: 3px 3px black
+}
+
+.glow {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgb(243, 247, 9), 0 0 20px rgb(247, 243, 19);
+  }
+  to {
+    text-shadow: 0 0 20px rgb(228, 225, 225), 0 0 30px #ffffff, 0 0 40px #f7f7f7;
+  }
+}
+
+
+
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 180px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+  transform: scale(0.7);
+  
+
+  transition: 0.5s ease;
+  margin: 100px 30px 30px 30px;
+}
+.card-image {
+  grid-area: image;
+  background: url("lich-king.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+.card-text .date {
+  color: rgb(17, 31, 223);
+  font-size:13px;
+}
+.card-text p {
+  color: grey;
+  font-size:15px;
+  font-weight: 300;
+}
+
+.card-text a {
+  margin-top: 10px;
+  display:block;
+  color: grey;
+  font-weight: bold;
+  text-decoration: none;
+}
+.card-text h2 {
+  margin-top:0px;
+  font-size:28px;
+}
+.card-stats {
+  grid-area: stats; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: rgb(17, 31, 223);
+}
+.card-stats .stat {
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.card-stats .border {
+  border-left: 1px solid rgb(172, 26, 87);
+  border-right: 1px solid rgb(172, 26, 87);
+}
+.card-stats .value{
+  font-size:22px;
+  font-weight: 500;
+}
+.card-stats .value sup{
+  font-size:12px;
+}
+.card-stats .type{
+  font-size:11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.card-stats .acess {
+  text-transform: uppercase;
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+.card-stats .acess a{
+  text-decoration: none;
+  color: white;
+}
+
+.card-stats .acess a:hover{
+  text-shadow: 2px 2px 7px white;
+}
+
+.card:hover {
+  transform: scale(0.8);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+/*card2*/
+.card-image.card2 {
+  background: url("screen-1.jpg");
+  background-size: cover;
+}
+.card-text.card2 .date {
+  color: rgb(17, 31, 223);
+}
+.card-stats.card2 .border {
+  border-left: 1px solid rgb(185, 67, 20);
+  border-right: 1px solid rgb(185, 67, 20);
+}
+.card-stats.card2 {
+  background: rgb(255, 77, 7);
+}
+
+/*card3*/
+.card-image.card1 {
+  background: url("https://www.pcgamesn.com/wp-content/uploads/2019/10/wow-cinematics-580x334.jpg");
+  background-size: cover;
+}
+.card-text.card3 .date {
+  color: rgb(17, 31, 223);
+}
+.card-stats.card3 .border {
+  border-left: 1px solid rgb(185, 67, 20);
+  border-right: 1px solid rgb(185, 67, 20);
+}
+.card-stats.card3 {
+  background: rgb(255, 77, 7);
+}
