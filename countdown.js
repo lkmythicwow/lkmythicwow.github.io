@@ -19,6 +19,6 @@ var x = setInterval(function() {
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "SET REALMLIST mythicwowbr.ddns.net!";
+    document.getElementById("countdown").innerHTML = "SET REALMLIST mythicwowbr.ddns.net";
   }
 }, 1000);
