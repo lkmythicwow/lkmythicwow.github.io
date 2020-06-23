@@ -710,6 +710,26 @@ iframe.lazy-placeholder,
 section.lazy-placeholder:after {
   opacity: 0.3;
 }
+.cid-s2HtlcWnLm {
+  background: #ffffff;
+}
+.cid-s2HtlcWnLm .video-block {
+  margin: auto;
+  width: 100% !important;
+}
+@media (max-width: 768px) {
+  .cid-s2HtlcWnLm .video-block {
+    width: 100% !important;
+  }
+}
+.cid-s2HuFag8sA {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+}
+.cid-s2HuFag8sA P {
+  color: #767676;
+}
 .cid-qTkzRZLJNu .navbar {
   padding: .5rem 0;
   background: #333333;
@@ -1090,17 +1110,6 @@ section.lazy-placeholder:after {
 .cid-qTkzRZLJNu .nav-link:hover,
 .cid-qTkzRZLJNu .dropdown-item:hover {
   color: #c1c1c1 !important;
-}
-.cid-qTkA127IK8 {
-  background-image: url("../../../assets/images/18874-alterac-valley-1280x1024.jpg");
-}
-.cid-qTkA127IK8 H1 {
-  color: #ffffff;
-  text-align: center;
-}
-.cid-qTkA127IK8 .mbr-text,
-.cid-qTkA127IK8 .mbr-section-btn {
-  color: #ffffff;
 }
 .cid-s2w6gBCRrQ {
   padding-top: 75px;
