@@ -1205,48 +1205,6 @@ section.lazy-placeholder:after {
 .cid-s2w5zR35Vy .social-list a:focus {
   text-decoration: none;
 }
-.cid-s604WGj7Il {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-color: #ffffff;
-}
-.cid-s604WGj7Il [class^="socicon-"]:before,
-.cid-s604WGj7Il [class*=" socicon-"]:before {
-  line-height: 44px;
-}
-.cid-s604WGj7Il .btn-social {
-  font-size: 20px;
-  border-radius: 50%;
-  padding: 0;
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
-  text-align: center;
-  position: relative;
-  color: #232323;
-  cursor: pointer;
-  border-color: #149dcc;
-}
-.cid-s604WGj7Il .btn-social i {
-  top: 0;
-  line-height: 44px;
-  width: 44px;
-}
-.cid-s604WGj7Il .btn-social:hover {
-  color: #fff;
-  background: #149dcc;
-}
-.cid-s604WGj7Il .btn-social:hover i.socicon {
-  color: #ffffff !important;
-}
-.cid-s604WGj7Il .btn-social + .btn {
-  margin-left: .1rem;
-}
-@media (max-width: 767px) {
-  .cid-s604WGj7Il .btn {
-    font-size: 20px !important;
-  }
-}
 .cid-qTkzRZLJNu .navbar {
   padding: .5rem 0;
   background: #333333;
