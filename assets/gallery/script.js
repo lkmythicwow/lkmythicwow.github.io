@@ -165,15 +165,11 @@
             $section.find('.mbr-gallery-filter ul li:not(.mbr-gallery-filter-all)').remove();
 
             var allItem = $section.find('.mbr-gallery-filter .mbr-gallery-filter-all'),
-                childItem = allItem.clone();
-                childItem.find('a').removeClass('active');
+                classAttr = (allItem.find('a').attr('class') || '').replace(/(^|\s)active(\s|$)/, ' ').trim();
  
             filterList.map(function(el) {
-                if(childItem.find('a').length) childItem.find('a').text(el);
-                else childItem.text(el);
-                filterHtml += '<li>' + childItem.html() + '</li>';
+                filterHtml += '<li><a class="' + classAttr + '" href>' + el + '</a></li>';
             });
-            childItem.remove();
 
             $section.find('.mbr-gallery-filter ul').append(filterHtml);
 
@@ -298,10 +294,10 @@
         clearTimeout(timeout2);
 
         timeout2 = setTimeout(function() {
-            var index = $(e.relatedTarget).parent().attr('data-video-num');
-            var slide = $(e.target).find('.carousel-item .mbr-background-video[data-video-num=' + index + ']');
+            var index = $(e.relatedTarget).parent().index();
+            var slide = $(e.target).find('.carousel-item').eq(index).find('.mbr-background-video');
             $(e.target).find('.carousel-item .mbr-background-video');
-            if (slide.length > 0 && slide.closest('.carousel-item').hasClass('active')) {
+            if (slide.length > 0) {
                 var player = players[+slide.attr('data-video-num')];
                 player.playVideo ? player.playVideo() : player.play();
             }
